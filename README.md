@@ -1,53 +1,25 @@
 # Bias-Aware Resume Matching
 
-This project studies whether an automated resume-job matching system gives different scores when only demographic signals in a resume are changed. The main model uses Sentence-BERT to calculate resume-job similarity scores, and the project audits whether those scores change when the applicant's name, pronouns, or university are modified.
+This project checks whether an automated resume-job matching system gives different scores when only demographic signals in a resume are changed. The main scoring model is Sentence-BERT, and we audit it by making counterfactual versions of each resume where one demographic field is changed at a time (the applicant's name, pronouns, or university).
 
-The project also includes a blind-screening mitigation experiment and an open-source LLM comparison to address the project feedback about examining a current language model.
+The project also includes a TF-IDF baseline, a blind-screening mitigation step, a compound-signal version where all three signals change at once, statistical tests on the per-signal differences, and a comparison with the FLAN-T5-base language model. All of it runs in Google Colab on CPU.
 
-## Project Overview
+## How to run
 
-Automated hiring systems are often used to filter job applications before a human reviews them. While these systems can improve efficiency, they may also reflect or amplify bias if the model gives different scores to equally qualified applicants based on demographic cues.
+Each notebook in `notebooks/` is self-contained. The expected order is:
 
-In this project, we create counterfactual resume variants where only one demographic signal changes at a time. Then we compare each resume version with job descriptions using SBERT cosine similarity scores.
+1. `sbert_matching_final.ipynb` — produces `results/sbert_scores.csv`
+2. `fairness_analysis_final.ipynb` — reads `sbert_scores.csv`, produces `results/fairness_comparison.csv` and `results/fairness_summary.csv`
+3. `blind_screening_final.ipynb` — produces blind-screening result files
+4. `tfidf_baseline_final.ipynb` — produces TF-IDF baseline result files
+5. `compound_bias_final.ipynb` — produces the compound-signal result files
+6. `statistical_tests_final.ipynb` — reads `fairness_comparison.csv`, produces Wilcoxon + bootstrap results
+7. `llm_demo_final.ipynb` — produces the FLAN-T5-base label files
+8. `figures_final.ipynb` — reads result CSVs and saves PNG figures for the report
 
-## Main Components
+Each notebook starts with an upload step in Colab where you upload the files it needs from `data/` (and, for fairness/statistical/figures, the CSVs from `results/`).
 
-### 1. SBERT Resume-Job Matching
-
-The notebook `sbert_matching_final.ipynb` uses Sentence-BERT to convert resumes and job descriptions into embeddings. Cosine similarity is then used to calculate a matching score for each resume-job pair.
-
-Output:
-
-`results/sbert_scores.csv`
-
-### 2. Counterfactual Fairness Analysis
-
-The notebook `fairness_analysis_final.ipynb` compares original resume scores with counterfactual resume scores. The score difference shows whether changing only the name, pronouns, or university affects the matching score.
-
-Outputs:
-
-`results/fairness_comparison.csv`  
-`results/fairness_summary.csv`
-
-### 3. Blind Screening Mitigation
-
-The notebook `blind_screening_final.ipynb` implements a blind-screening mitigation step by removing identity-related information such as name, pronouns, and university from the resume text. SBERT scores are then recalculated to check whether score differences are reduced.
-
-Outputs:
-
-`results/blind_sbert_scores.csv`  
-`results/blind_fairness_comparison.csv`  
-`results/blind_fairness_summary.csv`
-
-### 4. Open-Source LLM Comparison
-
-The notebook `llm_demo_final.ipynb` uses an open-source instruction-tuned language model to classify selected resume-job pairs as Strong match, Partial match, or Weak match. This LLM step is used as a qualitative comparison, while SBERT remains the main numerical model for fairness analysis.
-
-Output:
-
-`results/llm_match_decisions.csv`
-
-## Repository Structure
+## Repository layout
 
 ```text
 data/
@@ -59,90 +31,77 @@ notebooks/
   sbert_matching_final.ipynb
   fairness_analysis_final.ipynb
   blind_screening_final.ipynb
+  tfidf_baseline_final.ipynb
+  compound_bias_final.ipynb
+  statistical_tests_final.ipynb
   llm_demo_final.ipynb
+  figures_final.ipynb
 
 results/
   sbert_scores.csv
   fairness_comparison.csv
   fairness_summary.csv
-  blind_sbert_scores.csv
-  blind_fairness_comparison.csv
-  blind_fairness_summary.csv
+  blind_screening_scores.csv
+  blind_screening_comparison.csv
+  blind_screening_summary.csv
+  tfidf_scores.csv
+  tfidf_comparison.csv
+  tfidf_summary.csv
+  compound_resume_variants.csv
+  compound_comparison.csv
+  compound_summary.csv
+  fairness_statistical_tests.csv
   llm_match_decisions.csv
+  llm_counterfactual_comparison.csv
+  llm_flip_summary.csv
 
 report/
+  report.tex
+  BUILD_REPORT.md
+
+requirements.txt
 README.md
 ```
 
 ## Dataset
 
-The dataset contains resumes and job descriptions across five domains:
+We have five domains: Software Engineering, Finance, Marketing, Healthcare, and Education. One job per domain (5 total) and two base resumes per domain (10 total). Each base resume has three single-signal counterfactual versions (name, pronouns, university), so 40 resume variants in total. The compound-signal notebook also makes one extra variant per base resume where all three fields change at once.
 
-- Software Engineering
-- Finance
-- Marketing
-- Healthcare
-- Education
-
-Each base resume has counterfactual versions where only one demographic signal is changed:
-
-- Name
-- Pronouns
-- University
-
-All other resume qualifications remain the same, so score differences can be attributed to the changed demographic signal.
+All other resume content (skills, experience, projects, certifications) is held fixed across counterfactuals, so any score difference comes from the single field we changed.
 
 ## Methods
 
-### Sentence-BERT Matching
+- **SBERT matching.** `all-MiniLM-L6-v2` encodes each resume and each job description. The score is cosine similarity between the two embeddings.
+- **Counterfactual audit.** For each resume-job pair we compute the signed and absolute score difference between the original resume and each counterfactual.
+- **Blind screening.** We remove the name, the university, and pronoun words from the resume text and re-score. Important note: on this dataset, removing the only field that differs between two counterfactuals forces the difference to zero by construction. See the discussion in the report.
+- **TF-IDF baseline.** Same counterfactual audit, but with TF-IDF cosine similarity instead of SBERT. If TF-IDF shows the same pattern, the signal is in the resume text itself, not just in the neural embedding.
+- **Compound-signal audit.** For each base resume we score a version where the name, the pronouns, and the university all change at the same time. We compare to the original.
+- **Statistical tests.** Paired Wilcoxon signed-rank test and 95% bootstrap confidence interval on the per-signal absolute differences.
+- **LLM comparison.** FLAN-T5-base is asked to label each resume-job pair as Strong / Partial / Weak match. We use sampling with temperature 0.7 and shuffle the order of the options on every call, because beam search with a fixed option order makes the model return the same label every time. We also score the counterfactual versions and report how often the label flips.
 
-Sentence-BERT is used to create dense text embeddings for resumes and job descriptions. Cosine similarity is used as the resume-job matching score.
+## What we found
 
-### Counterfactual Fairness Audit
-
-For each resume-job pair, the project compares the original resume score with the changed resume score.
-
-The score difference is calculated as:
-
-`score_difference = changed_score - original_score`
-
-The absolute difference is used to measure how much the score changed regardless of direction.
-
-### Blind Screening
-
-Blind screening removes identity-related information before scoring. This helps test whether removing demographic cues reduces score differences across counterfactual resume versions.
-
-### LLM Comparison
-
-An open-source instruction-tuned LLM is used to provide qualitative match decisions for selected resume-job pairs. This addresses the project feedback to examine a current LLM in addition to Sentence-BERT.
-
-## Key Findings
-
-The original SBERT fairness analysis showed that changing demographic signals can slightly change resume-job matching scores. Name changes produced the largest average score shift, followed by university changes and pronoun changes.
-
-After blind screening, the counterfactual score differences were reduced. This suggests that removing identity-related cues can help reduce demographic sensitivity in this dataset.
-
-The LLM comparison showed how a current instruction-tuned language model can provide a qualitative resume-job match judgment. However, SBERT was kept as the main scoring model because it provides consistent numerical scores for fairness analysis.
+- Changing only the applicant's name produced the largest average SBERT score shift, followed by university, then pronouns.
+- The TF-IDF baseline showed the same ordering, so the effect is partly a property of the resume text and not only the neural embedding.
+- Blind screening dropped the name and university differences to (almost) zero, but on our dataset that result is forced by construction. The pronoun residual (~0.0036) is the more meaningful number because pronouns appear inside sentences that our simple removal step does not fully strip.
+- The compound-signal change moves the score by an amount similar to (but not exactly equal to) the sum of the three single-signal changes.
+- FLAN-T5-base also flips its label on some demographic-only changes once the prompt and decoding are set up so the model is not just defaulting to the first option.
 
 ## Limitations
 
-This project uses a small dataset, so the results should be treated as an audit-style study rather than a final conclusion about real-world hiring systems. The LLM component is qualitative and is not used as the main fairness metric. Also, blind screening was implemented as the mitigation method, while other methods such as data augmentation and adversarial debiasing can be explored in future work.
+Small dataset (10 base resumes, 5 jobs). The counterfactual edits are stylized. The blind-screening result is an upper bound, not a real mitigation result on a realistic ATS. The LLM is small and the prompt is short. We discuss all of this in the report.
 
-## Future Work
+## Scope changes from the proposal
 
-Future improvements can include:
+We promised three mitigation strategies in the proposal (blind screening, data augmentation, adversarial debiasing) plus an accuracy-vs-fairness tradeoff. We ended up running blind screening only, and we did not measure a held-out accuracy metric. We added the TF-IDF baseline and the compound-signal audit to partly cover those gaps. We added the FLAN-T5-base comparison in response to the proposal feedback that asked us to try a current LLM. Data augmentation and adversarial debiasing are listed as future work.
 
-- Expanding the dataset with more resumes and job descriptions
-- Testing more advanced LLMs for resume-job matching
-- Implementing data augmentation using counterfactual pairs
-- Implementing adversarial debiasing
-- Comparing accuracy and fairness tradeoffs across mitigation methods
+## Technologies
 
-## Technologies Used
+- Python 3.10 in Google Colab (CPU)
+- `sentence-transformers` (`all-MiniLM-L6-v2`)
+- `transformers` (`google/flan-t5-base`)
+- `scikit-learn` (TF-IDF, cosine similarity)
+- `scipy` (Wilcoxon test)
+- `pandas`, `numpy`, `matplotlib`
 
-- Python
-- Google Colab
-- pandas
-- scikit-learn
-- Sentence-BERT
-- Hugging Face Transformers
+See `requirements.txt` for pinned versions.

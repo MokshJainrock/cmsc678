@@ -1,201 +1,201 @@
 resume_id,version,changed_signal,job_id,job_title,blind_similarity_score
-R1,original,none,J1,Software Engineer,0.5279465
-R1,original,none,J2,Financial Analyst,0.19786957
-R1,original,none,J3,Marketing Coordinator,0.31979468
-R1,original,none,J4,Clinical Data Analyst,0.36482394
-R1,original,none,J5,Academic Advisor,0.32395762
-R1,name_changed,name,J1,Software Engineer,0.5279465
-R1,name_changed,name,J2,Financial Analyst,0.19786957
-R1,name_changed,name,J3,Marketing Coordinator,0.31979468
-R1,name_changed,name,J4,Clinical Data Analyst,0.36482394
-R1,name_changed,name,J5,Academic Advisor,0.32395762
-R1,pronoun_changed,pronoun,J1,Software Engineer,0.5390453
-R1,pronoun_changed,pronoun,J2,Financial Analyst,0.19861783
-R1,pronoun_changed,pronoun,J3,Marketing Coordinator,0.31128424
-R1,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.36645976
-R1,pronoun_changed,pronoun,J5,Academic Advisor,0.32161728
-R1,university_changed,university,J1,Software Engineer,0.5279465
-R1,university_changed,university,J2,Financial Analyst,0.19786957
-R1,university_changed,university,J3,Marketing Coordinator,0.31979468
-R1,university_changed,university,J4,Clinical Data Analyst,0.36482394
-R1,university_changed,university,J5,Academic Advisor,0.32395762
-R2,original,none,J1,Software Engineer,0.55754316
-R2,original,none,J2,Financial Analyst,0.15165822
-R2,original,none,J3,Marketing Coordinator,0.30028278
-R2,original,none,J4,Clinical Data Analyst,0.29679853
-R2,original,none,J5,Academic Advisor,0.3088352
-R2,name_changed,name,J1,Software Engineer,0.55754316
-R2,name_changed,name,J2,Financial Analyst,0.15165822
-R2,name_changed,name,J3,Marketing Coordinator,0.30028278
-R2,name_changed,name,J4,Clinical Data Analyst,0.29679853
-R2,name_changed,name,J5,Academic Advisor,0.3088352
-R2,pronoun_changed,pronoun,J1,Software Engineer,0.554842
-R2,pronoun_changed,pronoun,J2,Financial Analyst,0.15450634
-R2,pronoun_changed,pronoun,J3,Marketing Coordinator,0.31000996
-R2,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.29727855
-R2,pronoun_changed,pronoun,J5,Academic Advisor,0.31416422
-R2,university_changed,university,J1,Software Engineer,0.55754316
-R2,university_changed,university,J2,Financial Analyst,0.15165822
-R2,university_changed,university,J3,Marketing Coordinator,0.30028278
-R2,university_changed,university,J4,Clinical Data Analyst,0.29679853
-R2,university_changed,university,J5,Academic Advisor,0.3088352
-R3,original,none,J1,Software Engineer,0.31200075
-R3,original,none,J2,Financial Analyst,0.4203924
-R3,original,none,J3,Marketing Coordinator,0.292575
-R3,original,none,J4,Clinical Data Analyst,0.40709084
-R3,original,none,J5,Academic Advisor,0.2955686
-R3,name_changed,name,J1,Software Engineer,0.31200075
-R3,name_changed,name,J2,Financial Analyst,0.4203924
-R3,name_changed,name,J3,Marketing Coordinator,0.292575
-R3,name_changed,name,J4,Clinical Data Analyst,0.40709084
-R3,name_changed,name,J5,Academic Advisor,0.2955686
-R3,pronoun_changed,pronoun,J1,Software Engineer,0.3146236
-R3,pronoun_changed,pronoun,J2,Financial Analyst,0.41760096
-R3,pronoun_changed,pronoun,J3,Marketing Coordinator,0.2865281
-R3,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.4057079
-R3,pronoun_changed,pronoun,J5,Academic Advisor,0.2905438
-R3,university_changed,university,J1,Software Engineer,0.31200075
-R3,university_changed,university,J2,Financial Analyst,0.4203924
-R3,university_changed,university,J3,Marketing Coordinator,0.292575
-R3,university_changed,university,J4,Clinical Data Analyst,0.40709084
-R3,university_changed,university,J5,Academic Advisor,0.2955686
-R4,original,none,J1,Software Engineer,0.27052343
-R4,original,none,J2,Financial Analyst,0.45007032
-R4,original,none,J3,Marketing Coordinator,0.29289326
-R4,original,none,J4,Clinical Data Analyst,0.4756668
-R4,original,none,J5,Academic Advisor,0.280511
-R4,name_changed,name,J1,Software Engineer,0.27052343
-R4,name_changed,name,J2,Financial Analyst,0.45007032
-R4,name_changed,name,J3,Marketing Coordinator,0.29289326
-R4,name_changed,name,J4,Clinical Data Analyst,0.4756668
-R4,name_changed,name,J5,Academic Advisor,0.280511
-R4,pronoun_changed,pronoun,J1,Software Engineer,0.26878983
-R4,pronoun_changed,pronoun,J2,Financial Analyst,0.45383298
-R4,pronoun_changed,pronoun,J3,Marketing Coordinator,0.300227
-R4,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.47831023
-R4,pronoun_changed,pronoun,J5,Academic Advisor,0.2823678
-R4,university_changed,university,J1,Software Engineer,0.27052343
-R4,university_changed,university,J2,Financial Analyst,0.45007032
-R4,university_changed,university,J3,Marketing Coordinator,0.29289326
-R4,university_changed,university,J4,Clinical Data Analyst,0.4756668
-R4,university_changed,university,J5,Academic Advisor,0.280511
-R5,original,none,J1,Software Engineer,0.27973652
-R5,original,none,J2,Financial Analyst,0.1906507
-R5,original,none,J3,Marketing Coordinator,0.4524493
-R5,original,none,J4,Clinical Data Analyst,0.24563304
-R5,original,none,J5,Academic Advisor,0.28639722
-R5,name_changed,name,J1,Software Engineer,0.27973652
-R5,name_changed,name,J2,Financial Analyst,0.1906507
-R5,name_changed,name,J3,Marketing Coordinator,0.4524493
-R5,name_changed,name,J4,Clinical Data Analyst,0.24563304
-R5,name_changed,name,J5,Academic Advisor,0.28639722
-R5,pronoun_changed,pronoun,J1,Software Engineer,0.28012878
-R5,pronoun_changed,pronoun,J2,Financial Analyst,0.18946399
-R5,pronoun_changed,pronoun,J3,Marketing Coordinator,0.44544965
-R5,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.24329624
-R5,pronoun_changed,pronoun,J5,Academic Advisor,0.28532517
-R5,university_changed,university,J1,Software Engineer,0.27973652
-R5,university_changed,university,J2,Financial Analyst,0.1906507
-R5,university_changed,university,J3,Marketing Coordinator,0.4524493
-R5,university_changed,university,J4,Clinical Data Analyst,0.24563304
-R5,university_changed,university,J5,Academic Advisor,0.28639722
-R6,original,none,J1,Software Engineer,0.2859748
-R6,original,none,J2,Financial Analyst,0.20441315
-R6,original,none,J3,Marketing Coordinator,0.49454504
-R6,original,none,J4,Clinical Data Analyst,0.3569549
-R6,original,none,J5,Academic Advisor,0.2337133
-R6,name_changed,name,J1,Software Engineer,0.2859748
-R6,name_changed,name,J2,Financial Analyst,0.20441315
-R6,name_changed,name,J3,Marketing Coordinator,0.49454504
-R6,name_changed,name,J4,Clinical Data Analyst,0.3569549
-R6,name_changed,name,J5,Academic Advisor,0.2337133
-R6,pronoun_changed,pronoun,J1,Software Engineer,0.28723752
-R6,pronoun_changed,pronoun,J2,Financial Analyst,0.2065328
-R6,pronoun_changed,pronoun,J3,Marketing Coordinator,0.50683725
-R6,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.36152333
-R6,pronoun_changed,pronoun,J5,Academic Advisor,0.23896465
-R6,university_changed,university,J1,Software Engineer,0.2859748
-R6,university_changed,university,J2,Financial Analyst,0.20441315
-R6,university_changed,university,J3,Marketing Coordinator,0.49454504
-R6,university_changed,university,J4,Clinical Data Analyst,0.3569549
-R6,university_changed,university,J5,Academic Advisor,0.2337133
-R7,original,none,J1,Software Engineer,0.30316907
-R7,original,none,J2,Financial Analyst,0.36996168
-R7,original,none,J3,Marketing Coordinator,0.21188405
-R7,original,none,J4,Clinical Data Analyst,0.648952
-R7,original,none,J5,Academic Advisor,0.28907925
-R7,name_changed,name,J1,Software Engineer,0.30316907
-R7,name_changed,name,J2,Financial Analyst,0.36996168
-R7,name_changed,name,J3,Marketing Coordinator,0.21188405
-R7,name_changed,name,J4,Clinical Data Analyst,0.648952
-R7,name_changed,name,J5,Academic Advisor,0.28907925
-R7,pronoun_changed,pronoun,J1,Software Engineer,0.3065304
-R7,pronoun_changed,pronoun,J2,Financial Analyst,0.3717106
-R7,pronoun_changed,pronoun,J3,Marketing Coordinator,0.21063116
-R7,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.6463179
-R7,pronoun_changed,pronoun,J5,Academic Advisor,0.2886597
-R7,university_changed,university,J1,Software Engineer,0.30316907
-R7,university_changed,university,J2,Financial Analyst,0.36996168
-R7,university_changed,university,J3,Marketing Coordinator,0.21188405
-R7,university_changed,university,J4,Clinical Data Analyst,0.648952
-R7,university_changed,university,J5,Academic Advisor,0.28907925
-R8,original,none,J1,Software Engineer,0.21989195
-R8,original,none,J2,Financial Analyst,0.3319756
-R8,original,none,J3,Marketing Coordinator,0.31617904
-R8,original,none,J4,Clinical Data Analyst,0.5591152
-R8,original,none,J5,Academic Advisor,0.27039295
-R8,name_changed,name,J1,Software Engineer,0.21989195
-R8,name_changed,name,J2,Financial Analyst,0.3319756
-R8,name_changed,name,J3,Marketing Coordinator,0.31617904
-R8,name_changed,name,J4,Clinical Data Analyst,0.5591152
-R8,name_changed,name,J5,Academic Advisor,0.27039295
-R8,pronoun_changed,pronoun,J1,Software Engineer,0.21403877
-R8,pronoun_changed,pronoun,J2,Financial Analyst,0.3249979
-R8,pronoun_changed,pronoun,J3,Marketing Coordinator,0.31533742
-R8,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.55512685
-R8,pronoun_changed,pronoun,J5,Academic Advisor,0.26618052
-R8,university_changed,university,J1,Software Engineer,0.21989195
-R8,university_changed,university,J2,Financial Analyst,0.3319756
-R8,university_changed,university,J3,Marketing Coordinator,0.31617904
-R8,university_changed,university,J4,Clinical Data Analyst,0.5591152
-R8,university_changed,university,J5,Academic Advisor,0.27039295
-R9,original,none,J1,Software Engineer,0.21392901
-R9,original,none,J2,Financial Analyst,0.12781306
-R9,original,none,J3,Marketing Coordinator,0.3425359
-R9,original,none,J4,Clinical Data Analyst,0.24467602
-R9,original,none,J5,Academic Advisor,0.3386442
-R9,name_changed,name,J1,Software Engineer,0.21392901
-R9,name_changed,name,J2,Financial Analyst,0.12781306
-R9,name_changed,name,J3,Marketing Coordinator,0.3425359
-R9,name_changed,name,J4,Clinical Data Analyst,0.24467602
-R9,name_changed,name,J5,Academic Advisor,0.3386442
-R9,pronoun_changed,pronoun,J1,Software Engineer,0.2170884
-R9,pronoun_changed,pronoun,J2,Financial Analyst,0.12774977
-R9,pronoun_changed,pronoun,J3,Marketing Coordinator,0.33568472
-R9,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.24239759
-R9,pronoun_changed,pronoun,J5,Academic Advisor,0.34350336
-R9,university_changed,university,J1,Software Engineer,0.21392901
-R9,university_changed,university,J2,Financial Analyst,0.12781306
-R9,university_changed,university,J3,Marketing Coordinator,0.3425359
-R9,university_changed,university,J4,Clinical Data Analyst,0.24467602
-R9,university_changed,university,J5,Academic Advisor,0.3386442
-R10,original,none,J1,Software Engineer,0.277623
-R10,original,none,J2,Financial Analyst,0.23783194
-R10,original,none,J3,Marketing Coordinator,0.31669855
-R10,original,none,J4,Clinical Data Analyst,0.30551645
-R10,original,none,J5,Academic Advisor,0.46041358
-R10,name_changed,name,J1,Software Engineer,0.277623
-R10,name_changed,name,J2,Financial Analyst,0.23783194
-R10,name_changed,name,J3,Marketing Coordinator,0.31669855
-R10,name_changed,name,J4,Clinical Data Analyst,0.30551645
-R10,name_changed,name,J5,Academic Advisor,0.46041358
-R10,pronoun_changed,pronoun,J1,Software Engineer,0.27594733
-R10,pronoun_changed,pronoun,J2,Financial Analyst,0.23847423
-R10,pronoun_changed,pronoun,J3,Marketing Coordinator,0.32475567
-R10,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.30819255
-R10,pronoun_changed,pronoun,J5,Academic Advisor,0.4592207
-R10,university_changed,university,J1,Software Engineer,0.277623
-R10,university_changed,university,J2,Financial Analyst,0.23783194
-R10,university_changed,university,J3,Marketing Coordinator,0.31669855
-R10,university_changed,university,J4,Clinical Data Analyst,0.30551645
-R10,university_changed,university,J5,Academic Advisor,0.46041358
+R1,original,none,J1,Software Engineer,0.5683252215385437
+R1,original,none,J2,Financial Analyst,0.1878966987133026
+R1,original,none,J3,Marketing Coordinator,0.3009214997291565
+R1,original,none,J4,Clinical Data Analyst,0.37477850914001465
+R1,original,none,J5,Academic Advisor,0.3265955448150635
+R1,name_changed,name,J1,Software Engineer,0.5683252215385437
+R1,name_changed,name,J2,Financial Analyst,0.1878966987133026
+R1,name_changed,name,J3,Marketing Coordinator,0.3009214997291565
+R1,name_changed,name,J4,Clinical Data Analyst,0.37477850914001465
+R1,name_changed,name,J5,Academic Advisor,0.3265955448150635
+R1,pronoun_changed,pronoun,J1,Software Engineer,0.5683252215385437
+R1,pronoun_changed,pronoun,J2,Financial Analyst,0.1878966987133026
+R1,pronoun_changed,pronoun,J3,Marketing Coordinator,0.3009214997291565
+R1,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.37477850914001465
+R1,pronoun_changed,pronoun,J5,Academic Advisor,0.3265955448150635
+R1,university_changed,university,J1,Software Engineer,0.5683252215385437
+R1,university_changed,university,J2,Financial Analyst,0.1878966987133026
+R1,university_changed,university,J3,Marketing Coordinator,0.3009214997291565
+R1,university_changed,university,J4,Clinical Data Analyst,0.37477850914001465
+R1,university_changed,university,J5,Academic Advisor,0.3265955448150635
+R2,original,none,J1,Software Engineer,0.5826138854026794
+R2,original,none,J2,Financial Analyst,0.14732930064201355
+R2,original,none,J3,Marketing Coordinator,0.2923845052719116
+R2,original,none,J4,Clinical Data Analyst,0.30249297618865967
+R2,original,none,J5,Academic Advisor,0.3110726773738861
+R2,name_changed,name,J1,Software Engineer,0.5826138854026794
+R2,name_changed,name,J2,Financial Analyst,0.14732930064201355
+R2,name_changed,name,J3,Marketing Coordinator,0.2923845052719116
+R2,name_changed,name,J4,Clinical Data Analyst,0.30249297618865967
+R2,name_changed,name,J5,Academic Advisor,0.3110726773738861
+R2,pronoun_changed,pronoun,J1,Software Engineer,0.5826138854026794
+R2,pronoun_changed,pronoun,J2,Financial Analyst,0.14732930064201355
+R2,pronoun_changed,pronoun,J3,Marketing Coordinator,0.2923845052719116
+R2,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.30249297618865967
+R2,pronoun_changed,pronoun,J5,Academic Advisor,0.3110726773738861
+R2,university_changed,university,J1,Software Engineer,0.5826138854026794
+R2,university_changed,university,J2,Financial Analyst,0.14732930064201355
+R2,university_changed,university,J3,Marketing Coordinator,0.2923845052719116
+R2,university_changed,university,J4,Clinical Data Analyst,0.30249297618865967
+R2,university_changed,university,J5,Academic Advisor,0.3110726773738861
+R3,original,none,J1,Software Engineer,0.314841628074646
+R3,original,none,J2,Financial Analyst,0.420423686504364
+R3,original,none,J3,Marketing Coordinator,0.2756330072879791
+R3,original,none,J4,Clinical Data Analyst,0.40930476784706116
+R3,original,none,J5,Academic Advisor,0.29147517681121826
+R3,name_changed,name,J1,Software Engineer,0.314841628074646
+R3,name_changed,name,J2,Financial Analyst,0.420423686504364
+R3,name_changed,name,J3,Marketing Coordinator,0.2756330072879791
+R3,name_changed,name,J4,Clinical Data Analyst,0.40930476784706116
+R3,name_changed,name,J5,Academic Advisor,0.29147517681121826
+R3,pronoun_changed,pronoun,J1,Software Engineer,0.314841628074646
+R3,pronoun_changed,pronoun,J2,Financial Analyst,0.420423686504364
+R3,pronoun_changed,pronoun,J3,Marketing Coordinator,0.2756330072879791
+R3,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.40930476784706116
+R3,pronoun_changed,pronoun,J5,Academic Advisor,0.29147517681121826
+R3,university_changed,university,J1,Software Engineer,0.314841628074646
+R3,university_changed,university,J2,Financial Analyst,0.420423686504364
+R3,university_changed,university,J3,Marketing Coordinator,0.2756330072879791
+R3,university_changed,university,J4,Clinical Data Analyst,0.40930476784706116
+R3,university_changed,university,J5,Academic Advisor,0.29147517681121826
+R4,original,none,J1,Software Engineer,0.2734836935997009
+R4,original,none,J2,Financial Analyst,0.4492912292480469
+R4,original,none,J3,Marketing Coordinator,0.2930997908115387
+R4,original,none,J4,Clinical Data Analyst,0.47983014583587646
+R4,original,none,J5,Academic Advisor,0.2776971757411957
+R4,name_changed,name,J1,Software Engineer,0.2734836935997009
+R4,name_changed,name,J2,Financial Analyst,0.4492912292480469
+R4,name_changed,name,J3,Marketing Coordinator,0.2930997908115387
+R4,name_changed,name,J4,Clinical Data Analyst,0.47983014583587646
+R4,name_changed,name,J5,Academic Advisor,0.2776971757411957
+R4,pronoun_changed,pronoun,J1,Software Engineer,0.2734836935997009
+R4,pronoun_changed,pronoun,J2,Financial Analyst,0.4492912292480469
+R4,pronoun_changed,pronoun,J3,Marketing Coordinator,0.2930997908115387
+R4,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.47983014583587646
+R4,pronoun_changed,pronoun,J5,Academic Advisor,0.2776971757411957
+R4,university_changed,university,J1,Software Engineer,0.2734836935997009
+R4,university_changed,university,J2,Financial Analyst,0.4492912292480469
+R4,university_changed,university,J3,Marketing Coordinator,0.2930997908115387
+R4,university_changed,university,J4,Clinical Data Analyst,0.47983014583587646
+R4,university_changed,university,J5,Academic Advisor,0.2776971757411957
+R5,original,none,J1,Software Engineer,0.2945393919944763
+R5,original,none,J2,Financial Analyst,0.19172720611095428
+R5,original,none,J3,Marketing Coordinator,0.44925034046173096
+R5,original,none,J4,Clinical Data Analyst,0.2537367343902588
+R5,original,none,J5,Academic Advisor,0.2942923307418823
+R5,name_changed,name,J1,Software Engineer,0.2945393919944763
+R5,name_changed,name,J2,Financial Analyst,0.19172720611095428
+R5,name_changed,name,J3,Marketing Coordinator,0.44925034046173096
+R5,name_changed,name,J4,Clinical Data Analyst,0.2537367343902588
+R5,name_changed,name,J5,Academic Advisor,0.2942923307418823
+R5,pronoun_changed,pronoun,J1,Software Engineer,0.2945393919944763
+R5,pronoun_changed,pronoun,J2,Financial Analyst,0.19172720611095428
+R5,pronoun_changed,pronoun,J3,Marketing Coordinator,0.44925034046173096
+R5,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.2537367343902588
+R5,pronoun_changed,pronoun,J5,Academic Advisor,0.2942923307418823
+R5,university_changed,university,J1,Software Engineer,0.2945393919944763
+R5,university_changed,university,J2,Financial Analyst,0.19172720611095428
+R5,university_changed,university,J3,Marketing Coordinator,0.44925034046173096
+R5,university_changed,university,J4,Clinical Data Analyst,0.2537367343902588
+R5,university_changed,university,J5,Academic Advisor,0.2942923307418823
+R6,original,none,J1,Software Engineer,0.29459714889526367
+R6,original,none,J2,Financial Analyst,0.19882576167583466
+R6,original,none,J3,Marketing Coordinator,0.49565374851226807
+R6,original,none,J4,Clinical Data Analyst,0.3618912696838379
+R6,original,none,J5,Academic Advisor,0.23314955830574036
+R6,name_changed,name,J1,Software Engineer,0.29459714889526367
+R6,name_changed,name,J2,Financial Analyst,0.19882576167583466
+R6,name_changed,name,J3,Marketing Coordinator,0.49565374851226807
+R6,name_changed,name,J4,Clinical Data Analyst,0.3618912696838379
+R6,name_changed,name,J5,Academic Advisor,0.23314955830574036
+R6,pronoun_changed,pronoun,J1,Software Engineer,0.29459714889526367
+R6,pronoun_changed,pronoun,J2,Financial Analyst,0.19882576167583466
+R6,pronoun_changed,pronoun,J3,Marketing Coordinator,0.49565374851226807
+R6,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.3618912696838379
+R6,pronoun_changed,pronoun,J5,Academic Advisor,0.23314955830574036
+R6,university_changed,university,J1,Software Engineer,0.29459714889526367
+R6,university_changed,university,J2,Financial Analyst,0.19882576167583466
+R6,university_changed,university,J3,Marketing Coordinator,0.49565374851226807
+R6,university_changed,university,J4,Clinical Data Analyst,0.3618912696838379
+R6,university_changed,university,J5,Academic Advisor,0.23314955830574036
+R7,original,none,J1,Software Engineer,0.29846370220184326
+R7,original,none,J2,Financial Analyst,0.36727795004844666
+R7,original,none,J3,Marketing Coordinator,0.19486771523952484
+R7,original,none,J4,Clinical Data Analyst,0.6485248804092407
+R7,original,none,J5,Academic Advisor,0.2779234051704407
+R7,name_changed,name,J1,Software Engineer,0.29846370220184326
+R7,name_changed,name,J2,Financial Analyst,0.36727795004844666
+R7,name_changed,name,J3,Marketing Coordinator,0.19486771523952484
+R7,name_changed,name,J4,Clinical Data Analyst,0.6485248804092407
+R7,name_changed,name,J5,Academic Advisor,0.2779234051704407
+R7,pronoun_changed,pronoun,J1,Software Engineer,0.29846370220184326
+R7,pronoun_changed,pronoun,J2,Financial Analyst,0.36727795004844666
+R7,pronoun_changed,pronoun,J3,Marketing Coordinator,0.19486771523952484
+R7,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.6485248804092407
+R7,pronoun_changed,pronoun,J5,Academic Advisor,0.2779234051704407
+R7,university_changed,university,J1,Software Engineer,0.29846370220184326
+R7,university_changed,university,J2,Financial Analyst,0.36727795004844666
+R7,university_changed,university,J3,Marketing Coordinator,0.19486771523952484
+R7,university_changed,university,J4,Clinical Data Analyst,0.6485248804092407
+R7,university_changed,university,J5,Academic Advisor,0.2779234051704407
+R8,original,none,J1,Software Engineer,0.21700800955295563
+R8,original,none,J2,Financial Analyst,0.3287484049797058
+R8,original,none,J3,Marketing Coordinator,0.30581265687942505
+R8,original,none,J4,Clinical Data Analyst,0.5565868616104126
+R8,original,none,J5,Academic Advisor,0.26783695816993713
+R8,name_changed,name,J1,Software Engineer,0.21700800955295563
+R8,name_changed,name,J2,Financial Analyst,0.3287484049797058
+R8,name_changed,name,J3,Marketing Coordinator,0.30581265687942505
+R8,name_changed,name,J4,Clinical Data Analyst,0.5565868616104126
+R8,name_changed,name,J5,Academic Advisor,0.26783695816993713
+R8,pronoun_changed,pronoun,J1,Software Engineer,0.21700800955295563
+R8,pronoun_changed,pronoun,J2,Financial Analyst,0.3287484049797058
+R8,pronoun_changed,pronoun,J3,Marketing Coordinator,0.30581265687942505
+R8,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.5565868616104126
+R8,pronoun_changed,pronoun,J5,Academic Advisor,0.26783695816993713
+R8,university_changed,university,J1,Software Engineer,0.21700800955295563
+R8,university_changed,university,J2,Financial Analyst,0.3287484049797058
+R8,university_changed,university,J3,Marketing Coordinator,0.30581265687942505
+R8,university_changed,university,J4,Clinical Data Analyst,0.5565868616104126
+R8,university_changed,university,J5,Academic Advisor,0.26783695816993713
+R9,original,none,J1,Software Engineer,0.21813178062438965
+R9,original,none,J2,Financial Analyst,0.12565848231315613
+R9,original,none,J3,Marketing Coordinator,0.3354892134666443
+R9,original,none,J4,Clinical Data Analyst,0.2445577085018158
+R9,original,none,J5,Academic Advisor,0.3474923074245453
+R9,name_changed,name,J1,Software Engineer,0.21813178062438965
+R9,name_changed,name,J2,Financial Analyst,0.12565848231315613
+R9,name_changed,name,J3,Marketing Coordinator,0.3354892134666443
+R9,name_changed,name,J4,Clinical Data Analyst,0.2445577085018158
+R9,name_changed,name,J5,Academic Advisor,0.3474923074245453
+R9,pronoun_changed,pronoun,J1,Software Engineer,0.21813178062438965
+R9,pronoun_changed,pronoun,J2,Financial Analyst,0.12565848231315613
+R9,pronoun_changed,pronoun,J3,Marketing Coordinator,0.3354892134666443
+R9,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.2445577085018158
+R9,pronoun_changed,pronoun,J5,Academic Advisor,0.3474923074245453
+R9,university_changed,university,J1,Software Engineer,0.21813178062438965
+R9,university_changed,university,J2,Financial Analyst,0.12565848231315613
+R9,university_changed,university,J3,Marketing Coordinator,0.3354892134666443
+R9,university_changed,university,J4,Clinical Data Analyst,0.2445577085018158
+R9,university_changed,university,J5,Academic Advisor,0.3474923074245453
+R10,original,none,J1,Software Engineer,0.2892625629901886
+R10,original,none,J2,Financial Analyst,0.23836472630500793
+R10,original,none,J3,Marketing Coordinator,0.31921130418777466
+R10,original,none,J4,Clinical Data Analyst,0.3096618354320526
+R10,original,none,J5,Academic Advisor,0.46710699796676636
+R10,name_changed,name,J1,Software Engineer,0.2892625629901886
+R10,name_changed,name,J2,Financial Analyst,0.23836472630500793
+R10,name_changed,name,J3,Marketing Coordinator,0.31921130418777466
+R10,name_changed,name,J4,Clinical Data Analyst,0.3096618354320526
+R10,name_changed,name,J5,Academic Advisor,0.46710699796676636
+R10,pronoun_changed,pronoun,J1,Software Engineer,0.2892625629901886
+R10,pronoun_changed,pronoun,J2,Financial Analyst,0.23836472630500793
+R10,pronoun_changed,pronoun,J3,Marketing Coordinator,0.31921130418777466
+R10,pronoun_changed,pronoun,J4,Clinical Data Analyst,0.3096618354320526
+R10,pronoun_changed,pronoun,J5,Academic Advisor,0.46710699796676636
+R10,university_changed,university,J1,Software Engineer,0.2892625629901886
+R10,university_changed,university,J2,Financial Analyst,0.23836472630500793
+R10,university_changed,university,J3,Marketing Coordinator,0.31921130418777466
+R10,university_changed,university,J4,Clinical Data Analyst,0.3096618354320526
+R10,university_changed,university,J5,Academic Advisor,0.46710699796676636

@@ -1,4 +1,4 @@
-changed_signal,average_blind_score_difference,average_blind_absolute_difference,max_blind_absolute_difference,min_blind_score_difference,max_blind_score_difference
-name,0.0,0.0,0.0,0.0,0.0
-pronoun,0.00040219037,0.003616914,0.012292206,-0.008510441,0.012292206
-university,0.0,0.0,0.0,0.0,0.0
+changed_signal,average_blind_score_difference,average_blind_absolute_difference,max_blind_absolute_difference
+name,0.0,0.0,0.0
+pronoun,0.0,0.0,0.0
+university,0.0,0.0,0.0

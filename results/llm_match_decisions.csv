@@ -1,11 +1,41 @@
-resume_id,resume_domain,job_id,job_title,job_domain,llm_match_decision
-R1,Software Engineering,J1,Software Engineer,Software Engineering,Weak match
-R2,Software Engineering,J1,Software Engineer,Software Engineering,Weak match
-R3,Finance,J2,Financial Analyst,Finance,Weak match
-R4,Finance,J2,Financial Analyst,Finance,Weak match
-R5,Marketing,J3,Marketing Coordinator,Marketing,Weak match
-R6,Marketing,J3,Marketing Coordinator,Marketing,Weak match
-R7,Healthcare,J4,Clinical Data Analyst,Healthcare,Weak match
-R8,Healthcare,J4,Clinical Data Analyst,Healthcare,Weak match
-R9,Education,J5,Academic Advisor,Education,Weak match
-R10,Education,J5,Academic Advisor,Education,Weak match
+resume_id,version,changed_signal,resume_domain,job_id,job_title,llm_match_decision
+R1,original,none,Software Engineering,J1,Software Engineer,Strong match
+R1,name_changed,name,Software Engineering,J1,Software Engineer,Strong match
+R1,pronoun_changed,pronoun,Software Engineering,J1,Software Engineer,Strong match
+R1,university_changed,university,Software Engineering,J1,Software Engineer,Strong match
+R2,original,none,Software Engineering,J1,Software Engineer,Strong match
+R2,name_changed,name,Software Engineering,J1,Software Engineer,Strong match
+R2,pronoun_changed,pronoun,Software Engineering,J1,Software Engineer,Strong match
+R2,university_changed,university,Software Engineering,J1,Software Engineer,Strong match
+R3,original,none,Finance,J2,Financial Analyst,Strong match
+R3,name_changed,name,Finance,J2,Financial Analyst,Strong match
+R3,pronoun_changed,pronoun,Finance,J2,Financial Analyst,Strong match
+R3,university_changed,university,Finance,J2,Financial Analyst,Strong match
+R4,original,none,Finance,J2,Financial Analyst,Strong match
+R4,name_changed,name,Finance,J2,Financial Analyst,Strong match
+R4,pronoun_changed,pronoun,Finance,J2,Financial Analyst,Strong match
+R4,university_changed,university,Finance,J2,Financial Analyst,Strong match
+R5,original,none,Marketing,J3,Marketing Coordinator,Strong match
+R5,name_changed,name,Marketing,J3,Marketing Coordinator,Strong match
+R5,pronoun_changed,pronoun,Marketing,J3,Marketing Coordinator,Strong match
+R5,university_changed,university,Marketing,J3,Marketing Coordinator,Strong match
+R6,original,none,Marketing,J3,Marketing Coordinator,Strong match
+R6,name_changed,name,Marketing,J3,Marketing Coordinator,Strong match
+R6,pronoun_changed,pronoun,Marketing,J3,Marketing Coordinator,Strong match
+R6,university_changed,university,Marketing,J3,Marketing Coordinator,Strong match
+R7,original,none,Healthcare,J4,Clinical Data Analyst,Strong match
+R7,name_changed,name,Healthcare,J4,Clinical Data Analyst,Strong match
+R7,pronoun_changed,pronoun,Healthcare,J4,Clinical Data Analyst,Strong match
+R7,university_changed,university,Healthcare,J4,Clinical Data Analyst,Strong match
+R8,original,none,Healthcare,J4,Clinical Data Analyst,Strong match
+R8,name_changed,name,Healthcare,J4,Clinical Data Analyst,Strong match
+R8,pronoun_changed,pronoun,Healthcare,J4,Clinical Data Analyst,Strong match
+R8,university_changed,university,Healthcare,J4,Clinical Data Analyst,Strong match
+R9,original,none,Education,J5,Academic Advisor,Strong match
+R9,name_changed,name,Education,J5,Academic Advisor,Strong match
+R9,pronoun_changed,pronoun,Education,J5,Academic Advisor,Strong match
+R9,university_changed,university,Education,J5,Academic Advisor,Strong match
+R10,original,none,Education,J5,Academic Advisor,Strong match
+R10,name_changed,name,Education,J5,Academic Advisor,Strong match
+R10,pronoun_changed,pronoun,Education,J5,Academic Advisor,Strong match
+R10,university_changed,university,Education,J5,Academic Advisor,Strong match
