@@ -1,40 +1,42 @@
 # Bias-aware resume matching
 
-CMSC 678 project. We score resumes against jobs using sentence-bert and see if the score moves when we swap the applicant's name, pronouns, or university. It does. We also tried tf-idf, blind screening, a compound change (all 3 at once), and flan-t5-base.
+CMSC 678 project. We check if a resume scoring model treats two resumes the same when the only thing different is the person's name, pronouns, or school.
 
-## Folders
+Short answer: no, the score moves a little.
 
-- `data/` — 10 base resumes, 5 jobs, plus the counterfactual variants
-- `notebooks/` — 8 colab notebooks, one per step
-- `results/` — the output CSVs from running the notebooks
-- `report/` — final report PDF
-- `requirements.txt` — what to install
+## What is in here
 
-## Order to run
+- `data/` — the resumes and jobs we used
+- `notebooks/` — the 8 notebooks we ran in Colab
+- `results/` — the CSVs the notebooks made
+- `report/` — final report (PDF)
+- `requirements.txt` — packages to install
 
-1. `sbert_matching_final.ipynb` — sbert scores for every (resume, job) pair
-2. `fairness_analysis_final.ipynb` — original vs counterfactual score, per signal
-3. `blind_screening_final.ipynb` — same after removing name / pronouns / university
-4. `tfidf_baseline_final.ipynb` — same thing with tf-idf instead
-5. `compound_bias_final.ipynb` — change all 3 fields at once
-6. `statistical_tests_final.ipynb` — wilcoxon + bootstrap CI on the diffs
-7. `llm_demo_final.ipynb` — flan-t5-base labels each pair
-8. `figures_final.ipynb` — makes the 3 plots used in the report
+## What each notebook does
 
-Open them in Colab. Each notebook starts by asking you to upload the files it needs (usually `jobs.csv` and `resume_variants.csv` from `data/`, plus a results CSV for some of them).
+1. `sbert_matching_final` — gets a score for every resume + job pair using sentence-bert
+2. `fairness_analysis_final` — checks how much the score changes when we swap a field
+3. `blind_screening_final` — removes the name, pronouns and school, then scores again
+4. `tfidf_baseline_final` — same idea but with tf-idf instead of sbert
+5. `compound_bias_final` — changes all 3 fields at once
+6. `statistical_tests_final` — runs a wilcoxon test and bootstrap CI to see if the small numbers are real
+7. `llm_demo_final` — asks flan-t5-base to label each pair as strong / partial / weak match
+8. `figures_final` — makes the 3 plots that go in the report
 
-## What we got
+Run them in this order. Each one asks you to upload the files it needs at the top.
 
-- sbert score moves the most for name changes, then university, then pronouns
-- tf-idf moves way less, so sbert is doing more than just word overlap
-- blind screening drops everything to zero, but that's because the only thing different was the field we deleted, so the texts end up the same
-- compound (all 3 at once) is less than the sum of the 3 single changes, so the signals partly cancel
-- pronoun is the only signal where the direction of the shift is consistent (wilcoxon p around 5e-7)
-- flan-t5-base just picked the same label for every input even after we sampled and shuffled the options, so it wasn't useful as an auditor
+## What we found
 
-## Not done
+- Name change moves the score the most. School next. Pronouns the least.
+- Tf-idf moves a lot less, so sbert is reacting to more than just the words.
+- Blind screening drops everything to zero, but that is because the texts end up the same after we delete the only thing that was different.
+- Changing all 3 fields at once moves the score less than the sum of the 3 single changes. So they kind of cancel out.
+- The pronoun change is the only one where the score moves in the same direction most of the time.
+- Flan-t5-base just said the same thing for every input so it did not help much.
 
-The proposal said we'd also try data augmentation and adversarial debiasing and measure accuracy vs fairness. We didn't get to those. They're in future work.
+## What we did not do
+
+We said in the proposal we would also try data augmentation, adversarial debiasing, and check accuracy vs fairness. We did not get to those, they are in the future work part of the report.
 
 ## Setup
 
@@ -42,4 +44,4 @@ The proposal said we'd also try data augmentation and adversarial debiasing and 
 pip install -r requirements.txt
 ```
 
-Or just run the notebooks in Colab — each one does `!pip install` at the top.
+Or just open the notebooks in Colab. Each one runs `!pip install` at the top.
